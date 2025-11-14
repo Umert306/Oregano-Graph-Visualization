@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.dummy.info/new.owl"
+         xmlns="http://www.dummy.info/new.owl#">
+
+<owl:Ontology rdf:about="http://www.dummy.info/new.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_code">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#OBJECT_CODE"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_target">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#PROTEIN"/>
+  <rdfs:range rdf:resource="#MOLECULE"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#increase_activity">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#ACTIVITY"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_activity">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#ACTIVITY"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#decrease_activity">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#ACTIVITY"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#increase_effect">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#EFFECT"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_effect">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#EFFECT"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#decrease_effect">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#EFFECT"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#increase_efficacy">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#COMPOUND"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#decrease_efficacy">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#COMPOUND"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#causes_condition">
+  <rdfs:domain rdf:resource="#GENE"/>
+  <rdfs:range rdf:resource="#DISEASE"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_phenotype">
+  <rdfs:domain rdf:resource="#DISEASE"/>
+  <rdfs:range rdf:resource="#PHENOTYPE"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_affecting">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#GENE"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_substance_that_treats">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#DISEASE"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#acts_within">
+  <rdfs:domain rdf:resource="#GENE"/>
+  <rdfs:range rdf:resource="#PATHWAY"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_indication">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#INDICATION"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_side_effect">
+  <rdfs:domain rdf:resource="#COMPOUND"/>
+  <rdfs:range rdf:resource="#SIDE_EFFECT"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#gene_product_of">
+  <rdfs:domain rdf:resource="#PROTEIN"/>
+  <rdfs:range rdf:resource="#GENE"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#COMPOUND">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GENE">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#DISEASE">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PROTEIN">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#OBJECT_CODE">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#MOLECULE">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ACTIVITY">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#EFFECT">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PHENOTYPE">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PATHWAY">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#INDICATION">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SIDE_EFFECT">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+</rdf:RDF>
